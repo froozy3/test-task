@@ -10,8 +10,14 @@
    
 3.  ```bash
     venv/Scripts/Activate
+    
 4.  ```bash
+    cd test-task
+    
+5.  ```bash
     pip install -r requirements.txt
+
+6. use their training BD
 
 5. run main.py
 
