@@ -18,20 +18,18 @@ class ClosedCredit(BaseModel):
 
 
 class OpenCredit(BaseModel):
-    credit_issued_date: date  # Дата выдачи кредита
-    is_closed: bool = False  # Булевое значение: кредит открыт
-    return_date: date  # Крайняя дата возврата кредита
-    overdue_days: int  # Количество дней просрочки кредита
-    body: float  # Сумма выдачи
-    percent: float  # Нараховані відсотки
-    principal_payments: float  # Сума платежів по тілу
-    interest_payments: float  # Сума платежів по відсоткам
+    credit_issued_date: date  
+    is_closed: bool = False  
+    return_date: date  
+    body: float  
+    percent: float 
+    principal_payments: float  
+    interest_payments: float  
 
 
 class CreditResponse(BaseModel):
-    # Список закрытых кредитов
     closed_credits: List[ClosedCredit] = []
-    open_credits: List[OpenCredit] = [] # Список открытых кредитов
+    open_credits: List[OpenCredit] = [] 
 
 
 
